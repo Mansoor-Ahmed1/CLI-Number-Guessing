@@ -2,13 +2,13 @@
 
 import inquirer from "inquirer"
 
-// const randomNumber=23; 
+// const randomNumber:number=23; 
 
-    const randomNumber = Math.random();
+    const randomNumber:number = Math.random();
     // console.log(randomNumber)
-    const randomNumber_rounded = randomNumber*6
+    const randomNumber_rounded:number = randomNumber*6
     // console.log(randomNumber_rounded)
-    const finalNum = Math.ceil(randomNumber_rounded)
+    const finalNum:number = Math.ceil(randomNumber_rounded)
     // console.log(finalNum)
 
 const user_input = await inquirer.prompt([

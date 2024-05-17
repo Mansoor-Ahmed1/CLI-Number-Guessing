@@ -1,13 +1,15 @@
 #! /usr/bin/env node
-import inquirer from "inquirer";
-// const randomNumber=23; 
-const randomNumber = Math.random();
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var inquirer_1 = require("inquirer");
+// const randomNumber:number=23; 
+var randomNumber = Math.random();
 // console.log(randomNumber)
-const randomNumber_rounded = randomNumber * 6;
+var randomNumber_rounded = randomNumber * 6;
 // console.log(randomNumber_rounded)
-const finalNum = Math.ceil(randomNumber_rounded);
+var finalNum = Math.ceil(randomNumber_rounded);
 // console.log(finalNum)
-const user_input = await inquirer.prompt([
+var user_input = await inquirer_1.default.prompt([
     {
         message: "Try to Guess a number between 1 and 6:",
         type: "number",
